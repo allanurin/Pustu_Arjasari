@@ -1,0 +1,134 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #ffc800;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}*/
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: black;
+    /* border-bottom: 2px solid #ffc800; */
+    padding-bottom: 0.5em;
+}
+
+ol, ul {
+    margin-left: 1em;
+}
+
+ol li, ul li {
+    margin-bottom: 0.5em;
+}
+
+button {
+    background-color: #ffc800;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* footer {
+    background-color: #ffc800;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+} */
+
+
+
+/* Mempertahankan styling untuk card */
+
+.galerik {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #277551 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.galerik img {
+    height: 295px;
+    width: 370px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.galerik:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galerik__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.galerik:hover .galerik__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.galerik__title {
+    margin: 0;
+    font-size: 20px;
+    color: #096e27;
+    font-weight: 600;
+}
+
+.galerik__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #0a0a0a;
+    line-height: 1.4;
+}
+
